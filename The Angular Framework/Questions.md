@@ -129,3 +129,45 @@ The title of this movie is {{title}}
 - method variables must be initialized with a keyword like var, let, or const
 - if you refer to a class variable inside of a method, you must use 'this'
 
+---------- Arrays and Iteration
+# Complete this Angular HTML code so that it will loop through a string array of fruits coming from the associated Angular component.
+
+<div *ngFor = 'let fruit of fruits'> 
+  {{ fruit }} 
+</div>
+
+# Complete the Angular code below in the html file to use indices in the *ngFor loop.
+
+<div *ngFor='let student of students; let j = index'>
+Student {{ j }}, whose name is {{ student }}, is in class.
+</div>
+
+# Complete the code where countries is an array of Country type, and each Country has a name and a capital.
+
+<div *ngFor="let country of countries">
+  The capital of {{country.name}} is {{country.capital}}
+</div>
+
+---------- Reading Data
+# A user clicks on a button and receives a list of evening gowns. Arrange the journey of data of evening gowns after these initial three steps:
+
+• Database query is performed
+• Database delivers query results to server
+• Server processes and formats evening gown data
+
+- Server sends JSON of gowns to front-end
+- Angular service receives gowns
+- Angular component receives gowns
+- Angular view receives gowns
+
+# Order the process through which data makes its way from a service to an HTML view:
+- component makes a call to a service requesting data
+- service receives call from component and collects data
+- service sends data to component
+- component passes data to view
+- view receives data
+- view iterates through the data using *ngFor
+
+
+
+
