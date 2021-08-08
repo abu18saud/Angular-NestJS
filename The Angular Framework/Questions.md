@@ -169,5 +169,10 @@ Student {{ j }}, whose name is {{ student }}, is in class.
 - view iterates through the data using *ngFor
 
 
+---------- Generating an Angular Service
+# The class body of a service is where:
+- we write methods that export data out of the service
+
+
 
 

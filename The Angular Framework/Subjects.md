@@ -84,6 +84,10 @@ BMW X3 with a mileage of 4400
 
 # https://stackblitz.com/edit/angular-loop-thru-custom-type?file
 
+# Generating an Angular Service
+
+
+- ng generate service transportation
 
 
 
