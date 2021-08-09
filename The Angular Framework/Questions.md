@@ -174,5 +174,36 @@ Student {{ j }}, whose name is {{ student }}, is in class.
 - we write methods that export data out of the service
 
 
+# Given the GroceryItem interface below, complete the code in a service to import the interface.
+groceryItem.ts
+
+export interface GroceryItem {
+  name: string;
+  sku: string;
+  price: number;
+}
+
+market.service.ts
+import {GroceryItem} from './groceryItem';
+
+# Recreating Car Array in a Service
+# Data is exported from services via:
+- methods
+
+# Implement dependency injection by injecting the users service into the school component.
+
+import { Component } from '@angular/core';
+import { UserService } from './users.service';
+import { User } from './user';
+
+export class AppComponent  {
+  users: User[ ];
+
+constructor (private userService: UserService
+) {
+ this.users = this.userService.getUsers();
+  }
+}
+
 
 
