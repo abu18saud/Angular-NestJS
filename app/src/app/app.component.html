@@ -1,7 +1,17 @@
-<div>
-  <div *ngFor="let car of cars">  
-    We have a {{car.make}} {{car.model}} with a mileage of {{car.miles}} 
-  </div>
-</div>
+<style>
+  body {
+    height: 100vh;
+    width: 100vh;
+    cursor: url(../favicon.ico), pointer;
+  }
+</style>
 
-<button (click)="saySomething()"> Say Something </button>
+<body>
+  <div>
+    <div *ngFor="let car of cars">
+      We have a {{car.make}} {{car.model}} with a mileage of {{car.miles}}
+    </div>
+  </div>
+
+  <button (click)="saySomething()"> Say Something </button>
+</body>
