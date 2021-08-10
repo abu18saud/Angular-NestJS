@@ -205,5 +205,35 @@ constructor (private userService: UserService
   }
 }
 
+------------------- Angular Events
 
+# Given the following code in the component, finish this Angular view code to trigger the "register" method from the component:
 
+app.component.ts
+
+register() {
+  this.userService.registerUser(this.idCache);
+}
+
+<button (click)="register()">
+  Register new user
+</button>
+
+# Arrange the following elements in the order they occur.
+The button triggers an event
+A user clicks on a button
+The updated value is displayed in the view
+The component responds by updating a value
+The event invokes a method in the component
+
+# The button will double an integer every time the button is pressed.  Complete the code.
+
+COMPONENT
+counter = 1;
+double() {
+this.counter *=2;
+}
+
+VIEW
+{{counter}}
+<button (click) = "double()" > double the number </button>

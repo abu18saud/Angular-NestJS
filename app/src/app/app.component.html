@@ -6,12 +6,34 @@
   }
 </style>
 
-<body>
+<body class="container">
   <div>
     <div *ngFor="let car of cars">
       We have a {{car.make}} {{car.model}} with a mileage of {{car.miles}}
     </div>
   </div>
+  <!--click, change, mouseover, hover, dragover, etc.-->
+  <button (dragover)="saySomething()"> Say Something </button>
+  <button (click)="register()">
+    Register new user
+  </button>
 
-  <button (click)="saySomething()"> Say Something </button>
+  <div class="container">
+    <div class="number-display">
+      {{counter}}
+    </div>
+    <button (click)="increment()"> increment </button>
+  </div>
+  <div class="display">
+    {{phrase}}
+  </div>
+  <button (click)="update()"> click me </button>
+
+  <div class="container">
+    <div class="number-display">
+      {{dcounter}}
+    </div>
+    <button (click)="double()"> double </button>
+  </div>
+
 </body>

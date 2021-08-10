@@ -111,6 +111,9 @@ Note how we create a private variable called transportationService that is of th
 # Angular Events
 
 
+# Making a Counter
+Our next exercise is an example using click events to make a counter increment. When you click on a button, the counter increments. This is what we will be trying to achieve:
+
 
 
 
