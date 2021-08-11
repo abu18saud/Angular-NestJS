@@ -9,6 +9,8 @@ import { Car } from './car';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  username: string = "";
+
   title = 'app';
 
   cars: Car[];
@@ -39,6 +41,7 @@ export class AppComponent {
   update() {
     this.phrase += " ..and going";
   }
+
 
 
 }

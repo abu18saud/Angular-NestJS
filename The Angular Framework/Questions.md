@@ -237,3 +237,21 @@ this.counter *=2;
 VIEW
 {{counter}}
 <button (click) = "double()" > double the number </button>
+
+
+
+# Data binding describes the flow of data:
+- beetween component and view
+
+# Two way data binding stores data inside of a:
+- model
+
+----------------Banana in a Box
+In an Angular view, square brackets in a construct as seen below represent what?
+ 
+<input [(ngModel)] = "nationality"> 
+
+- data flow the component to the view
+
+
+

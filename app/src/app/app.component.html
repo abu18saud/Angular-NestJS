@@ -36,4 +36,13 @@
     <button (click)="double()"> double </button>
   </div>
 
+  <!--
+    هناك خلال غير معرف في تدفق البيانات من اتجاهين  -->
+<div class="container">
+    <div class="display">
+      {{username}}
+    </div>
+    <input [(ngModel)]="username" placeholder="enter a username">
+  </div>
+ 
 </body>

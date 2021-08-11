@@ -114,6 +114,49 @@ Note how we create a private variable called transportationService that is of th
 # Making a Counter
 Our next exercise is an example using click events to make a counter increment. When you click on a button, the counter increments. This is what we will be trying to achieve:
 
+# One Way Data Binding
+- https://t.me/CsharpAbdullahAlsalem/184
+1. User clicks on a button in the view. The (click) event is wired to an "increment" method, asking the component to fire a method with the same name.
+2. The component receives the click event and fires the increment() method, which updates the counter.
+3. The counter variable in the component is updated and then sends that updated value to the view.
+4. The view receives the updated counter variable and then updates the display so that the user sees a new number appear.
+
+- With one-way data binding, data flows in one direction. Imagine a ceiling fan. Even though the blades are flowing in a circular fashion, the movement is still only going in one direction.
+
+# Two Way Data Binding
+- Two way data binding is when the flow of data between the view and the component goes both ways. There's a central "model" or variable container. If its updated in the view, then the component gets the change. If its updated in the component, then the view gets the change. The flow of data can go either way.
+- Since then, developers have universally agreed that two way data binding should be used sparingly because of its intense demands on system resources. With that said, two way data binding is still possible in Angular 8. There are certain situations where it can be useful when used judiciously.
+
+In this lesson, we will implement a simple widget that allows you to see what you’re typing being reflected in the view as you are typing it in real time.
+
+The end goal is that you can type into a text field and see the result of what you have typed being stored in a model, which is displayed in the view.
+
+# Banana in a Box
+
+The construct that allows two way data binding looks like this:
+<input [(ngModel)] = "username">
+HTML
+The [()] construct in Angular enables two way data binding. Some developers call this the "banana in a box".
+
+It’s actually a combination of the square brackets [ ] which indicate data binding from the component into the view, (the "box") and the parentheses ( ) which enable data binding from the view back up to the component (the "banana").
+
+We’ve seen the parentheses in the view earlier:
+button (click) = "increment()"
+TS
+In our <button (click) = "increment()"> example, the (click) was an example of one way data binding from the view to the component.
+
+The square brackets, on the other hand, represent the data flow from the component back down into the view. By putting them together, Angular gives us a bi-directional flow of data. The "banana in a box".
+Angular models as implemented via ngModel have nothing to do with databases or storage on the back-end. A model in Angular temporarily holds data within the front-end application.
+
+# ngModel
+
+Let’s look at a diagram of two way data binding. Data goes in two directions. When you type in something in the input field in the VIEW, it updates the model in the COMPONENT, which then sends the updated model value back to the VIEW. All of this is happening almost instantly. This is possible due to a special type of model called ngModel.
+
+ngModel allows you to type in a field and watch the value of that variable be updated instantly as you type.
+
+
+
+
 
 
 
