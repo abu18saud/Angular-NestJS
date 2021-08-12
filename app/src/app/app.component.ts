@@ -9,11 +9,14 @@ import { Car } from './car';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  cars: Car[];
+  make: string = "";
+  model: string = "";
+  miles: number = 0;
   username: string = "";
 
   title = 'app';
-
-  cars: Car[];
 
   constructor(private transportationService: TransportationService) {
     this.cars = this.transportationService.getCars();
@@ -42,6 +45,10 @@ export class AppComponent {
     this.phrase += " ..and going";
   }
 
+  addCar(){
+    const newCar: Car = {make: this.make, model: this.model, miles: this.miles };
+    this.transportationService.addCar(newCar);
+  }
 
 
 }

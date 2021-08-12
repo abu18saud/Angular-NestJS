@@ -253,5 +253,91 @@ In an Angular view, square brackets in a construct as seen below represent what?
 
 - data flow the component to the view
 
+----------------ngModel
 
+# Two way data binding in Angular refers to 2 way data flow between:
+
+- The component and the view
+
+# Order the sequence of two way data binding in Angular.
+- User types word into field
+- Word is stored in component Component
+- sends updated value back to view
+
+# From which of the following would you import the FormsModule to your imports in your app.module.ts file?
+
+@angular/forms
+
+
+# Rearrange the events in the order that they appear.
+
+- user clicks a button to add new data to an array
+- event is triggered in component that sends data to the service
+- service receives message and adds an item to its array
+- service returns array to component
+- component displays updated data in the view
+
+# Given the following code:
+
+const newCar: Car = {make: this.make, model: this.model, miles: this.miles };
+
+What is the difference between newCar and Car?
+
+- newCar is a variable that is a Car type
+
+
+# الاختبار الفصلي
+
+# Complete the following code so that the type is correctly set as a string.
+const name: string = "Fred"
+
+
+# Complete the following Address interface
+ Address {
+    street1: string;
+    street2: string;
+    city: string; 
+    state: string;
+    postal_code: number;
+    country: string;
+}
+
+# In the following Angular code living inside of a component :
+
+fuel = 0;
+addFuel( ) {
+  fuel += 10; 
+}
+
+# There is an error in the code. What is the error?
+- code inside method should read this.fuel += 10; 
+
+# Complete the following code to create a string array of fruit names:
+const fruits: string
+[ ] = ['apple', 'banana', 'pear', 'plum'];
+
+# Complete the following code to complete the array:
+const secruityCodes: number
+[ ] = [12451, 77811, 59382, 23432];
+
+# Complete the following VIEW code in HTML to iterate over the array of fruits and also provide an index to be used inside of the loop.
+
+<div  *ngFor='let fruit of fruits; let i = index'>
+  {{fruit}}} 
+</div>
+
+# A primary role of an Angular service is to:
+- Be a central data manager that components can use
+
+# Complete the view ( HTML ) code so that a method named registerUser is triggered in the component. 
+
+<a  (click)='registerUser()'> register user </a>
+
+# Complete the view ( HTML ) code so that two way data binding will occur for a variable named spice. 
+
+<input [(ngModel)] ='spice' placeholder="name of your seasoning">
+
+# What is the purpose of the [(ngModel)] in Angular?
+
+- It enables 2 way data binding
 

@@ -17,9 +17,13 @@ export class TransportationService {
   constructor() { }
 
   // this is where we will write methods to export our Car array
-  // NEW CODE
+  // new code
   getCars() {
     return this.cars;
+   }
+
+  addCar(car: Car){
+    this.cars.push(car);
   }
 
 
