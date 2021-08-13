@@ -26,6 +26,55 @@ SELECT id, name, email, age FROM users;
 -  DELETE FROM users WHERE id = 3;
 - DELETE FROM users WHERE name = ‘david’;
 
+# Creating & Inserting into Collections
+- Let’s start by looking at a JavaScript object that we want to insert into a users collection.
+* { name: "james", email: "james@sololearn.com", age: 28 }
+- We can insert an object into a collection by using an insertOne() statement.
+* db.usersCollection.insertOne()
+
+** db.usersCollection.insertOne({ name: "james", email: "james@sololearn.com", age: 28 })
+
+- Mongo also allows us to insert other data types such as arrays! For example we could insert a list of our users favorite fruits!
+
+* db.usersCollection.insertOne({
+   name: "james",
+   email: "james@sololearn.com",
+   age: 28,
+   favoriteFruits: [ "apples", "grapes"]
+ });
+
+# Selecting Documents
+- db.usersCollection.find({ name: "james"})
+* 
+{
+  _id: ObjectId("5099803df3f4948bd2f98391"),
+  name: "james",
+  email: "james@sololearn.com",
+  age: 28
+}
+
+# Multi
+- db.collectionName.find({name: "james", age: 23})
+
+# Updating Documents
+
+db.usersCollection.update(
+  { name: "james" },
+  {
+    $set: {
+      age: 45
+    }
+  }
+)
+
+--- When updating a document we use $set to tell MongoDB what fields need to be updated and what value to set them to.
+
+# Deleting Documents
+- db.usersCollection.deleteOne( { "_id" : ObjectId("5099803df3f4948bd2f98391") } );
+
+* When deleting a document in mongoDB we can call .deleteOne() to delete a single document or .deleteMany() to delete multiple.
+
+
 
 
 

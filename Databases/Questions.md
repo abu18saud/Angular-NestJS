@@ -52,5 +52,66 @@ UPDATE users SET
 WHERE id = 6;
 
 # Rearrange the code to delete users with name Troy from the table:
-
 DELETE FROM users WHERE name = 'Troy';
+
+* noSQL
+# What would be the mongoDB equivalent of a users table in SQL?
+- User Collection
+
+# Complete the coding statement below.
+- db.usersCollection.insertOne
+({ name: "james",
+email: "james@sololearn.com",
+age: 28 } )
+
+# In mongoDB how is the _id field generated?
+- It generates automatically
+
+# Complete the code below so that we update the documents email field.
+- db.usersCollection.update(
+  { name: "james" },
+  {
+  $set: {
+      email: "update@example.com"
+    }
+  }
+)
+
+# Which of the following allows you to delete documents in mongoDB? 
+.deleteMany()
+.deleteOne()
+
+
+# Quiz
+
+
+# noSQL is a type of non-relational database.
+- True
+
+# Complete the code below so that we update all documents with the age of 30.
+
+db.usersCollection.update(
+  { age: 30 },
+  {
+    $set: {
+      email: “update@example.com”
+    }
+  }
+)
+
+# Which of the following is important to use to avoid deleting the wrong document?
+- _id
+
+# What is the difference between volatile and non-volatile storage?
+- Non-volatile storage persists through restarts
+
+# What’s the main difference between a Relational and Non-relational database?
+- Relational databases enforce structure on you with columns and datatypes
+
+# Which of the following is NOT a valid datatype to store strings in postgreSQL?
+- STRING
+
+# Complete the code below so that we select all users with an id that is greater than 20 and the name 'troy'.
+- SELECT * FROM users
+WHERE id > 20 AND
+name = 'troy';

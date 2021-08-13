@@ -32,3 +32,15 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## هذا هو الحل
 npm install --save-dev @angular-devkit/build-angular
 
+# Installing TypeORM
+npm install typeorm
+
+npm install reflect-metadata
+// Somewhere in our main file
+import "reflect-metadata";
+
+- Finally, install a database driver for whatever database instance you’re using. In our case we are using PostgreSQL (pg) so we need to install the pg module.
+
+npm install pg
+
+
