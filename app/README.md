@@ -43,4 +43,6 @@ import "reflect-metadata";
 
 npm install pg
 
+# install NestJS
+- $ npm i -g @nestjs/cli
 
