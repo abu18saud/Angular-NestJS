@@ -24,3 +24,10 @@
 - GET requests from a front-end connect to GET routes on back-end
 * GET request from front-end connects to POST route
 - You can have two routes with the same name but different types
+
+# Which of the following processes allow us to type one line of code in the terminal that creates the whole project for us within a matter of seconds?
+- Scaffolding
+
+# Localhost refers to which of the following:
+- Your local computer address
+

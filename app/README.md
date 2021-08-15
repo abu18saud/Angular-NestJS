@@ -46,3 +46,6 @@ npm install pg
 # install NestJS
 - $ npm i -g @nestjs/cli
 
+# start Nest
+npm run start
+
