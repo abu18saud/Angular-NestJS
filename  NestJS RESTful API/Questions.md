@@ -31,3 +31,30 @@
 # Localhost refers to which of the following:
 - Your local computer address
 
+# Services in both NestJS and Angular do which of the following:
+- Relay data to and from controllers and components respectively
+
+# Complete the NestJS server response to respond with the word "rice" when someone visits localhost:3000. Do not use a service, just return a string.
+
+@Get()
+  getFood(): string {
+     return "rice";
+}
+
+# Complete this code so that it will compile.
+@Get()
+randomNumber(): number
+ { 
+return Math.floor(Math.random( ) * 10);
+}
+
+# Order the procedure of setting up a NestJS back-end application with a /hello route that is designed to print out the words "hello everyone!". The route the user will hit will look something like this:
+https://www.xyz.com/hello
+
+- Scaffold the NestJS application in the terminal
+- Scaffold the /hello route
+- Open the hello controller add a string return type to the hello route \
+- Return "hello everyone!" in the /hello route code block
+
+# A bicycles controller in NestJS that has a GET route with no parameters will direct users to which of the following:
+- a route with the url of /bicycles
