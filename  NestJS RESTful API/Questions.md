@@ -58,3 +58,15 @@ https://www.xyz.com/hello
 
 # A bicycles controller in NestJS that has a GET route with no parameters will direct users to which of the following:
 - a route with the url of /bicycles
+
+# Finish the code below so that this GET route is set up to return a simple JavaScript object.
+getCreds(@Req() request: Request): {}
+ {
+   return {uuid: '12x8s', auth: true, tokenize: false}
+ }
+
+# Complete this nested route decorator where 'vegan' is a nested route under 'foods'
+@Get('foods/vegan')
+      veganfoods(@Req() request: Request): string {
+     return 'this is the vegan foods route';
+}
