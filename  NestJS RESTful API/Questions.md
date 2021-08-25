@@ -70,3 +70,25 @@ getCreds(@Req() request: Request): {}
       veganfoods(@Req() request: Request): string {
      return 'this is the vegan foods route';
 }
+
+# Which of the following are true statements about wildcard routes?
+- the root route to any site is usually a wildcard route
+* wildcard routes can be nested routes
+* wildcard routes accept variable segments in the url
+* wildcard routes can be GET routes
+
+# Which one of the following best describes the function of an API for a grocery store?
+- An API is like a specific way to engage with a store
+
+# RESTful routes:
+- Are a standard way to communicate with an API
+
+# Complete the full name of each step of the CRUD process.
+Create
+Read
+Update
+Delete
+
+# By convention, in RESTful routes, which of the following should return a collection of stamps?
+- GET /stamps
+
