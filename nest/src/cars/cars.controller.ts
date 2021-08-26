@@ -1,4 +1,4 @@
-import { Controller, Get, Req, Request } from '@nestjs/common';
+import { Controller, Get, Post, Req, Body, Request} from '@nestjs/common';
 
 @Controller('cars')
 export class CarsController {
@@ -48,5 +48,12 @@ export class CarsController {
     }
 
     //@Get('gamers/alliances/:country/:region/:city')
+
+    @Post()
+    async create(@Body() carParams) {
+      return `I got your post request ! 
+      You want to create a ${carParams.make}`;
+    }
+
 
 }

@@ -92,3 +92,10 @@ Delete
 # By convention, in RESTful routes, which of the following should return a collection of stamps?
 - GET /stamps
 
+# Describe the data journey associated with a POST request by rearranging the steps:
+1- Front-end sends a bundle of data to a POST route - ترسل الواجهة الأمامية مجموعة من البيانات إلى مسار POST.
+2- Back-end receives POST request - تتلقى النهاية الخلفية طلب POST
+3- POST request is sent to appropriate POST route - يتم إرسال طلب POST إلى مسار POST المناسب
+4- POST route receives bundle of data and encodes it in a temp variable - يستقبل مسار POST حزمة من البيانات ويرمزها في متغير مؤقت
+5- POST route does something with received data - يقوم مسار POST بعمل شيء مع البيانات المستلمة
+6- POST route sends a response - يرسل مسار POST ردًا
