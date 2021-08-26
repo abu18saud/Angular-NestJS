@@ -46,6 +46,33 @@ https://t.me/CsharpAbdullahAlsalem/193
 
 
 
+# DB Steps
+1) Before the steps postgresql must be installed. 
+2) You can download and install from https://www.enterprisedb.com/downloads/postgres-postgresql-downloads 
+3) After install you can use pgAdmin for administration. 
+4) to use cli (cmd) in windows you need to add the path C:\Program Files\PostgreSQL\12\bin as a new PATH into computer => properties => advanced system settings=> Environment Variables => System Variables 
+5) After 4 steps you can use psql in cmd - cli 6) You can use SQL Shell (psql) also
+
+- https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-18-04
+
+
+
+# Here are the commands written out in order:
+createdb transportation 
+psql // gets you into the psql command line 
+\c transportation
+
+CREATE TABLE cars 
+(id SERIAL, make TEXT, model TEXT, miles INT);
+
+INSERT into cars values 
+(DEFAULT, 'subaru', 'outback', 3420);
+INSERT into cars values 
+(DEFAULT, 'honda', 'passport', 27);
+INSERT into cars values 
+(DEFAULT, 'volvo', 'XC40', 33000);
+
+select * from cars;
 
 
 

@@ -99,3 +99,9 @@ Delete
 4- POST route receives bundle of data and encodes it in a temp variable - يستقبل مسار POST حزمة من البيانات ويرمزها في متغير مؤقت
 5- POST route does something with received data - يقوم مسار POST بعمل شيء مع البيانات المستلمة
 6- POST route sends a response - يرسل مسار POST ردًا
+
+# Why do we need to accept an id when updating something?
+- We will use the id to look up the record in the database
+
+# Why do we only need to pass an id in a "delete" POST request?
+- All we need is the id to locate the record to delete
