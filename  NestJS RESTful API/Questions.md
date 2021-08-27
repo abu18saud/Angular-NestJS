@@ -117,3 +117,22 @@ Delete
 # How does an ORM know where to pull data when querying in an underlying database?
 - TypeORM can be configured to know the name of the database and the table we are targeting
 
+# In which of the following files do you tell NestJS where to establish a database connection for TypeORM?
+- app.module.ts
+
+# An "Entity" in TypeORM helps us to interact with which of the following?
+- database table
+
+# What is the role of a Repository in TypeORM?
+- It holds all of the database query methods we will need to use
+
+# Complete the following code so that the id coming in from the GET request is passed on to the FoodService.
+- @Get("/:id")
+  findOne(@Param() incoming): Promise<FoodItem[]> {
+  return this.FoodService.findOne(incoming.id);
+}
+
+# In NestJS one key difference between a service and a controller is which of the following:
+- The controller receives GET requests from the front-end - تستقبل وحدة التحكم طلبات GET من الواجهة الأمامية
+- The service interfaces with a repository of database methods
+

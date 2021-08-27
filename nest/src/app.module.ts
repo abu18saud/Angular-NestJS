@@ -19,3 +19,6 @@ import { CarModule } from './cars/car.module';
   ],
 })
 export class AppModule {}
+/* The app.module file in NestJS, just like in Angular, has some config properties that affect the entire application.
+ */
+

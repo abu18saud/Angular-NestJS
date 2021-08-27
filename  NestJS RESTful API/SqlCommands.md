@@ -17,3 +17,7 @@ INSERT into cars values
 (DEFAULT, 'volvo', 'XC40', 33000);
 
 select * from cars;
+
+
+# لإظهار معلومات المنفذ
+\conninfo 
