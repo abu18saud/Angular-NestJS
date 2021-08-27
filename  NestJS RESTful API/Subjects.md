@@ -75,6 +75,13 @@ INSERT into cars values
 select * from cars;
 
 
+# ORM
+- https://t.me/CsharpAbdullahAlsalem/212
+- https://github.com/nestjs/nest/tree/master/sample/05-sql-typeorm
+-
+
+
+
 
 
 

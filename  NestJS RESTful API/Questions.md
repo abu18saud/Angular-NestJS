@@ -105,3 +105,15 @@ Delete
 
 # Why do we only need to pass an id in a "delete" POST request?
 - All we need is the id to locate the record to delete
+
+# Complete the following SQL statement to insert a book into a PostgreSQL books table in a database. Assume that the id field is an auto-incrementing (serial) value. 
+- INSERT INTO books (DEFAULT,  "Goodnight June", "A quiet book", "April Johnson", " 978-3-16-148410-0" )
+
+
+# By using an ORM, like TypeORM, we are able to change databases while not having to change database queries to the server.
+
+- True
+
+# How does an ORM know where to pull data when querying in an underlying database?
+- TypeORM can be configured to know the name of the database and the table we are targeting
+
