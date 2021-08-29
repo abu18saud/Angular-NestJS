@@ -136,3 +136,64 @@ Delete
 - The controller receives GET requests from the front-end - تستقبل وحدة التحكم طلبات GET من الواجهة الأمامية
 - The service interfaces with a repository of database methods
 
+# Complete the following SQL statement to insert a book into a PostgreSQL books table in a database. Assume that the id field is an auto-incrementing (serial) value. 
+
+ INSERT INTO books VALUES
+(DEFAULT,  "Goodnight June", "A quiet book", "April Johnson", " 978-3-16-148410-0" )
+
+# Which of the following refers to the "server" in our app?
+- NestJS
+
+# In order to make a service method use http to call a back-end we have to make the return type on the method be which of the following?
+- an Observable
+
+
+//-------- Quiz
+# Which of the following is NOT a function of a controller in NestJS?
+- communicating with a repository
+
+# On the front-end a GET request is sent to the server via an XHR which is then handled by what within the back-end?
+- GET route
+
+# When you run a NestJS server locally, it typically runs on:
+- port 3000
+
+# Which of the following routes should get a collection of flowers?
+- GET /flowers/
+
+# Scenario:
+A user clicks on a button in the front end to get a list of cats.  
+
+Order the responses below, from top to bottom, in terms of the order of the most likely request / response flow.  The item at the top should be the first thing that happens and the item at the bottom is the last thing that happens in the flow.
+
+1- User clicks on button in the front end
+2- server accepts request as valid
+3- server goes into the database to get cats
+4- server returns the list of cats as JSON
+5- Client translates JSON into pretty display
+
+
+# Which of the following is true about a POST request?
+- It is used when adding an item to a database
+- It sends a bundle of data to the back end 
+- It connects to a POST route on the back end
+- It is always different than a GET request
+
+# Which of the following is considered a multilingual database communicator?
+- TypeORM
+
+# Which of the following constructs helps us WAIT for data until the back-end call for data has returned and is ready to display?
+- An Observable
+
+# Complete the Entity that maps to an existing student table in a database.
+@Entity()
+export class Student {
+  @PrimaryGeneratedColumn()
+  id: number;
+  @Column('text')
+  first_name: string;
+  @Column('text')
+  last_name: string;
+  @Column()
+  hasRegistered: boolean;
+}

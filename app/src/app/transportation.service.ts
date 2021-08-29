@@ -1,3 +1,5 @@
+import { HttpClient} from '@angular/common/http';
+import { Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
 import { Car } from './car';
 
@@ -18,9 +20,13 @@ export class TransportationService {
 
   // this is where we will write methods to export our Car array
   // new code
+
   getCars() {
     return this.cars;
-   }
+  }
+/*   getCars(): Observable {
+    return this.http.get('/cars/');
+  } */
 
   addCar(car: Car){
     this.cars.push(car);

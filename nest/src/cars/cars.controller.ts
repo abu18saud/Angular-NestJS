@@ -11,10 +11,8 @@ export class CarController {
     return this.CarService.findAll();
   }
 
-  @Get("/:id")
-  findOne(@Param() param): Promise<Cars> {
-    return this.CarService.findOne(param.id);
-  }
-
-
+    @Get("/:id")
+    findOne(@Param() param): Promise<Cars> {
+      return this.CarService.findOne(param.id);
+    } 
 }
