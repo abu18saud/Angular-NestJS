@@ -49,3 +49,6 @@ npm install pg
 # start Nest
 npm run start
 
+# For upgrade to the latest version of Angular
+$ ng update
+
