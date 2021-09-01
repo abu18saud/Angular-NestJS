@@ -52,3 +52,10 @@ npm run start
 # For upgrade to the latest version of Angular
 $ ng update
 
+# Making New Routes
+$ ng generate component home
+$ ng g c home
+
+# Making Route File
+https://t.me/CsharpAbdullahAlsalem/225
+
