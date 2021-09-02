@@ -37,3 +37,32 @@ const routes: Routes = [
 
 # Complete the code to make the following link work with the Angular router.
 <a routerLink= "cars">  view cars </a>
+
+# Use dependency injection to inject a taco service into the restaurant constructor.
+import { TacoService } from '../flights.service';
+
+export class FoodComponent {
+  constructor(private tacoService : TacoService) { }
+}
+
+# Which of the following is true about our flight model?
+- It provides structure for what a flight should look like
+
+# Angular often uses which of the following to relay data or information to a back-end?
+- services
+
+# Complete the following code so that the outer div has a class of "container" and the boxes inside of the container have a class of "box".
+<div *ngFor="let color of colors" class = "container"> 
+  <div class="box"> {{ color }} </div> 
+</div>
+
+# Complete the basic date pipe in order to transform the copyright_date into a readable format. Assume that the copyright_date field is a JavaScript Date object.
+<div> 
+  All content ©  {{ copyright_date | date}}
+</div>
+
+# The src/styles.scss stylesheet contains styles that will apply to which of the following?
+- all components in the app
+
+# In SCSS, we can use nested styles to hierarchically fit styles inside of their parent elements in the stylesheet.
+- True
