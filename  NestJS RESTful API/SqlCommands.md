@@ -21,3 +21,15 @@ select * from cars;
 
 # لإظهار معلومات المنفذ
 \conninfo 
+
+
+
+# Add New Table
+
+CREATE TABLE flights (id SERIAL, 
+origin VARCHAR(20), 
+destination VARCHAR(20), 
+flightNumber INT, 
+depart TIMESTAMP WITH TIME ZONE,
+arrive TIMESTAMP WITH TIME ZONE, 
+nonstop BOOLEAN);

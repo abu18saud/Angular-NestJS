@@ -66,3 +66,33 @@ export class FoodComponent {
 
 # In SCSS, we can use nested styles to hierarchically fit styles inside of their parent elements in the stylesheet.
 - True
+
+# An Angular controller has an array of link objects that looks like this:
+
+links = [ {name: "home", class: "red"}, {name: "about", class: "black"}, {name: "contact", class: "green"} ] ; 
+
+Complete the html view so that all of the links connect to the name of each link and each link's class is set to the class of the object:
+
+<div *ngFor="let link of links">
+  <a routeLink={{link.name}}  class={{link.class}}> {{link.name}} </a>
+</div>
+
+
+# Complete the media query below to remove borders from the .registration_box when the screen width falls below 500 pixels:
+
+.registration_box {
+border: 1px solid black;
+@ media screen and (max-width: 499px) {
+    border: none;
+  }
+}
+
+# A media query that says @media screen and (min-width: 400px) would apply to all devices with:
+- a width of 400 pixels or more
+
+# Complete the code to ensure that customerTotal is being fed through a currency pipe with a format that outputs the currency in Euros.
+
+<div class="customer_total">
+  {{ customerTotal | currency : "EUR" }}
+</div>
+
