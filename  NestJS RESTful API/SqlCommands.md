@@ -33,3 +33,7 @@ flightNumber INT,
 depart TIMESTAMP WITH TIME ZONE,
 arrive TIMESTAMP WITH TIME ZONE, 
 nonstop BOOLEAN);
+
+# Note
+In PostgreSQL, TIMESTAMP WITH TIME ZONE corresponds to a date / time object in JavaScript .You can take a Date( ) object in JavaScript (as in const currentDate = new Date( ) ), which will give you and directly deposit that value into a PostgreSQL database.
+

@@ -96,3 +96,11 @@ border: 1px solid black;
   {{ customerTotal | currency : "EUR" }}
 </div>
 
+
+# You need to create a new birds table with one bird in the PostgreSQL animals database. Order the following commands to make that happen
+psql (logs into postgres)
+\c animals
+CREATE TABLE birds (id SERIAL, name VARCHAR(20));
+INSERT INTO birds VALUES (DEFAULT, 'Mockingjay');
+
+# 
