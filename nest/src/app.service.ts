@@ -1,8 +1,11 @@
-import { Injectable } from '@nestjs/common';
+import { Controller, Get } from '@nestjs/common';
 
-@Injectable()
-export class AppService {
+@Controller()
+export class AppController {
+  constructor() {}
+
+  @Get()
   getHello(): string {
-    return 'السلام عليكم ورحمة الله وبركاته!';
+    return  "Visit the /cars route to see a list of cars!"
   }
 }
