@@ -1,9 +1,11 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Cars } from './cars/cars.entity';
-//import {flights} from './flights/'
+import { Flights } from './flights/flights.entity';
 import { CarModule } from './cars/car.module';
 import { FlightsController } from './flights/flights.controller';
+import { FlightsModule } from './flights/flights.module';
+
 
 @Module({
   imports: [
@@ -14,12 +16,11 @@ import { FlightsController } from './flights/flights.controller';
       username: 'postgres',
       password: 'root',
       database: 'transportation',
-      entities: [Cars],
+      entities: [Cars, Flights],
       synchronize: true,
     }),
-    CarModule,
+    CarModule, FlightsModule,
   ],
-  controllers: [FlightsController],
 })
 export class AppModule {}
 /* The app.module file in NestJS, just like in Angular, has some config properties that affect the entire application.

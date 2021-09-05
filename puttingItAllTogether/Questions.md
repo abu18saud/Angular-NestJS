@@ -103,4 +103,8 @@ psql (logs into postgres)
 CREATE TABLE birds (id SERIAL, name VARCHAR(20));
 INSERT INTO birds VALUES (DEFAULT, 'Mockingjay');
 
-# 
+# In a NestJS application, which of the following contains the code that defines the API endpoints?
+- Controller
+
+# In Angular, which of the following are things that we can subscribe to in order to obtain a stream of data from an external source like an API coming from a NestJS back-end?
+- Observables
