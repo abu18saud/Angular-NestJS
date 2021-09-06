@@ -12,7 +12,7 @@ import { FlightsModule } from './flights/flights.module';
     TypeOrmModule.forRoot({
       type: 'postgres',
       host: 'localhost',
-      port: 5432,
+      port: 8080,
       username: 'postgres',
       password: 'root',
       database: 'transportation',

@@ -43,10 +43,14 @@ INSERT into flights
 values 
 (DEFAULT, 'phoenix', 'Denver', date('20130101'),date('20130101'), false,23);
 _________________________
-INSERT into flights values 
+INSERT into flights
+(id,origin,destination,depart, arrive,nonstop,flightNumber)
+ values 
 (DEFAULT, 'Jackson', 'Chicago', date('20200101'),date('20200101'), true, 234);
 _________________________
-INSERT into flights values 
+INSERT into flights
+(id,origin,destination,depart, arrive,nonstop,flightNumber)
+ values 
 (DEFAULT, 'Atlanta', 'New York', date('20210101'),date('20210101'), true, 456);
 
 # Note

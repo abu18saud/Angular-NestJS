@@ -1,0 +1,5 @@
+# ملاحظات هامة للغاية
+Feel free to download the front and back-ends respectively (make sure you're on the correct branches) and play with the code, extend it, and see ways to improve what we have so far. There are a ton of future considerations here. We could add some sort of authentication to have a login for users before they start tinkering with the back-end. One way to do this is using JSON web tokens or "JWTs" (pronounced "jawts"). JWTs create a secure connection between the front-end and the back-end to make sure that only people with a valid token are able to access restricted areas. Another quick extension would be to add a simple "loading" notice that tells the user to wait while the flights from the back-end are loading. We have gone ahead and done this; view the StackBlitz live site to see the loader in action.
+
+
+# 

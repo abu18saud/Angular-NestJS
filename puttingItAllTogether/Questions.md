@@ -195,5 +195,46 @@ updateStudent(student: Student) {
     `https://olduniversity.com/students/${student.id}/update`,student);
 }
 
+# Which of the following is true when sending a delete method to a NestJS back-end from Angular using http.post?
+- at least 2 parameters are required, the 2nd one being null
+
+# Which of the following processes do we use POST requests for in our final app?
+- create a flight.
+- update a flight.
+- delete
 
 
+# الاختبار النهائي
+
+# Angular places subpages in what part within an Angular view?
+- router-outlet.
+
+# In Angular, which of the following constructs ties an HTML element in the view to the Angular router?
+- routerLink
+
+# Complete the HTML Angular code so that it reformats raw date data into a user readable date.
+
+<div class="departs">
+  {{flight.depart | date}}
+</div>
+
+# In SCSS, if you nest .box under .container, then the .box styles under .container will:
+- override any general styles listed directly under .container
+- apply to .box elements within .container elements
+
+# @media screen and (max-width : 499px ) { } is a style that IGNORES all elements that are:
+- 500 pixels and higher
+
+# Review the following NestJS code. What is the difference here between @Body and @Param?
+@Patch(":id/update")
+async update(@Param('id') id, @Body() flight: Flight): Promise<any> {
+  flight.id = Number(id);
+  return this.flightService.update(flight);
+}
+
+- Param is the url parameter and Body is the incoming bundle of data
+
+# Assume the apiResult$ is an observable. Complete the subscription so that this.results is populated with payload.
+apiResult$.subscribe(payload => {
+  this.results = payload; 
+});
