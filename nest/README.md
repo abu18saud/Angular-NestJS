@@ -58,20 +58,19 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
-## new service
+## new resource
 
 ```bash
 # generate controller
-$ nest generate controller users
+$ nest generate controller users --no-spec
 
 # generate service
-$ nest generate service users
+$ nest generate service users --no-spec
 
 # generate service
-$ nest generate service users
-
+$ nest generate service users --no-spec
 # generate module
-$ nest generate module users
+$ nest generate module users --no-spec
 
 # generate resource
 - To avoid generating test files, you can pass the --no-spec flag, as follows:
