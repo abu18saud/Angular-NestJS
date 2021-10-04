@@ -59,8 +59,25 @@ $ npm run test:cov
 ```
 
 ## new service
-$ nest generate controller cars
 
+```bash
+# generate controller
+$ nest generate controller users
+
+# generate service
+$ nest generate service users
+
+# generate service
+$ nest generate service users
+
+# generate module
+$ nest generate module users
+
+# generate resource
+- To avoid generating test files, you can pass the --no-spec flag, as follows:
+$ nest g resource users --no-spec
+
+```
 
 ## ORM Commands
 $ npm install --save @nestjs/typeorm typeorm mysql2
